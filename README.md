@@ -39,3 +39,7 @@ This should deliver a fresh copy of the Zend Skeleton App and a fresh copy of a 
 ```
 
 Sites should be available at http://foundation-test.local and http://zend-app.local
+
+## Notes
+
+* When you destroy the vm (vagrant destroy), the zend-app.local and foundation-test.local folders will persist. To get a fully clean copy of these, uncomment the 'rm' lines in setup-sites.sh
