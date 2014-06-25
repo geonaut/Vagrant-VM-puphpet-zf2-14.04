@@ -15,6 +15,22 @@ It is not intended for use in a Production envrionment
 * Basebox and LAMP configuration from http://puphpet.com
 * RVM / Vagrant integration following: https://rvm.io/integration/vagrant
 
+## VM includes / uses
+
+* PHP 5.5 with xDebug
+* MariaDB
+* Apache2 with 2 vhosts
+* Ruby 2.1.2 Multiuser
+* RVM (stable)
+* Node.js (stable)
+* n (stable)
+* npm (stable)
+* Bower & Grunt (stable)
+* Bazaar
+* Foundation 5
+* Compass
+* Composer
+
 ## Initial Setup
 
 * Clone to your local system
