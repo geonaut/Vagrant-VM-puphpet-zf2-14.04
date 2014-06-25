@@ -15,7 +15,7 @@ It is not intended for use in a Production envrionment
 * Basebox and LAMP configuration from http://puphpet.com
 * RVM / Vagrant integration following: https://rvm.io/integration/vagrant
 
-## Use
+## Initial Setup
 
 * Clone to your local system
 * Navigate in to the folder, using terminal
@@ -40,8 +40,14 @@ This should deliver a fresh copy of the Zend Skeleton App and a fresh copy of a 
 
 Sites should be available at http://foundation-test.local and http://zend-app.local
 
+## Using Grunt
+
+* Navigate to /vagrant/foundation-test.local/
+* Type ``` grunt watch ```
+
 ## Notes
 
 * When you destroy the vm (vagrant destroy), the zend-app.local and foundation-test.local folders will persist. To get a fully clean copy of these, uncomment the 'rm' lines in setup-sites.sh
 * Further vhosts can be added by copying and editing the vhost code in config.yaml
 * On login as the vagrant user, you can update installed gems by running 'gem update'
+* If you are using livereload, add ``` options: { livereload: true, }, ``` under ``` watch: { ``` in \vagrant\foundation-test.local\gruntfile.js
