@@ -43,3 +43,4 @@ Sites should be available at http://foundation-test.local and http://zend-app.lo
 ## Notes
 
 * When you destroy the vm (vagrant destroy), the zend-app.local and foundation-test.local folders will persist. To get a fully clean copy of these, uncomment the 'rm' lines in setup-sites.sh
+* Further vhosts can be added by copying and editing the vhost code in config.yaml
