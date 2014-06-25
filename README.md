@@ -42,6 +42,9 @@ It is not intended for use in a Production envrionment
 cd /vagrant
 sh setup-sites.sh
 ```
+
+## Housekeeping
+
 * type ``` gem update ```
 
 This should deliver a fresh copy of the Zend Skeleton App and a fresh copy of a Foundation 5 template
@@ -50,7 +53,7 @@ This should deliver a fresh copy of the Zend Skeleton App and a fresh copy of a 
 
 * Edit your local hosts file (not on the VM), adding:
 ```
-192.168.56.101 foundation-test.local
+192.168.56.101  foundation-test.local
 192.168.56.101  zend-app.local
 ```
 
