@@ -39,8 +39,8 @@ This should deliver a fresh copy of the Zend Skeleton App and a fresh copy of a 
 
 * Edit your local hosts file (not on the VM), adding:
 ```
-192.168.101.56  foundation-test.local
-192.168.101.56  zend-app.local
+192.168.56.101 foundation-test.local
+192.168.56.101  zend-app.local
 ```
 
 Sites should be available at http://foundation-test.local and http://zend-app.local
