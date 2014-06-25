@@ -84,7 +84,7 @@ apache:
             servername: zend-app.local
             serveraliases:
                 - www.zend-app.local
-            docroot: /var/www/zend-app.local
+            docroot: /var/www/zend-app.local/skeleton-application/public
             port: '80'
             setenv:
                 - 'APP_ENV dev'
