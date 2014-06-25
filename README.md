@@ -10,6 +10,11 @@ It is not intended for use in a Production envrionment
 * Vagrant
 * VBox
 
+## Resources used
+
+* Basebox and LAMP configuration from http://puphpet.com
+* RVM / Vagrant integration following: https://rvm.io/integration/vagrant
+
 ## Use
 
 * Clone to your local system
