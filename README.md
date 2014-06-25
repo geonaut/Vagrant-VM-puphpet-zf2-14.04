@@ -19,19 +19,14 @@ It is not intended for use in a Production envrionment
 
 * Clone to your local system
 * Navigate in to the folder, using terminal
-* Type:
-```bash
-vagrant up
-```
-* Once the VM is built type:
-```
-vagrant ssh
-```
+* Type: ``` vagrant up ```
+* Once the VM is built type: ``` vagrant ssh ```
 * Once logged in to the fresh VM, type:
 ```
 cd /vagrant
 sh setup-sites.sh
 ```
+* type ``` gem update ```
 
 This should deliver a fresh copy of the Zend Skeleton App and a fresh copy of a Foundation 5 template
 
@@ -49,3 +44,4 @@ Sites should be available at http://foundation-test.local and http://zend-app.lo
 
 * When you destroy the vm (vagrant destroy), the zend-app.local and foundation-test.local folders will persist. To get a fully clean copy of these, uncomment the 'rm' lines in setup-sites.sh
 * Further vhosts can be added by copying and editing the vhost code in config.yaml
+* On login as the vagrant user, you can update installed gems by running 'gem update'
