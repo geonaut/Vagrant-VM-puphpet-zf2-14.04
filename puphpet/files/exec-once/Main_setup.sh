@@ -18,7 +18,8 @@ rvm list
 echo 'Set Default to 2.1.2'
 rvm alias create default 2.1.2
 source /etc/profile.d/rvm.sh
-
+# Add login user to rvm group
+sudo usermod -a -G rvm vagrant
 echo 'Checking RVM is a function'
 type rvm | head -n 1
 
@@ -38,7 +39,7 @@ sudo npm install -g n
 sudo n stable
 
 echo 'Installing Bower & Grunt'
-npm install -g bower grunt-cli grunt-sass grunt-contrib-watch
+npm install -g bower grunt-cli
 
 echo 'Installing Foundation 5'
 gem install foundation

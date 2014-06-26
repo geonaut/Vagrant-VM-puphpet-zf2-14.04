@@ -1,2 +1,8 @@
-
 foundation-test.local/
+common/
+zend-app.local/
+DDC_sites.sh
+online.ddc.vagrant/
+admin.ddc.vagrant/
+
+puphpet/shell/self-promotion.txt

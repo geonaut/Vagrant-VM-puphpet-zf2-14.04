@@ -118,25 +118,46 @@ apache:
             ssl_key: ''
             ssl_chain: ''
             ssl_certs_dir: ''
-    mod_pagespeed: 0
-    mod_spdy: 0
-nginx:
-    install: 0
-    vhosts:
-        fvJVL1eXwHHn:
-            server_name: awesome.dev
-            server_aliases:
-                - www.awesome.dev
-            www_root: /var/www/awesome.dev
-            listen_port: '80'
-            index_files:
-                - index.html
-                - index.htm
-                - index.php
-            envvars:
+        Zcm0aseuOjjE:
+            servername: online.ddc.vagrant
+            serveraliases:
+                - www.online.ddc.vagrant
+            docroot: /var/www/online.ddc.vagrant/trunk
+            port: '80'
+            setenv:
                 - 'APP_ENV dev'
+            override:
+                - All
+            options:
+                - Indexes
+                - FollowSymLinks
+                - MultiViews
+            custom_fragment: ''
             ssl_cert: ''
             ssl_key: ''
+            ssl_chain: ''
+            ssl_certs_dir: ''
+        Zcm03sfuOjjE:
+            servername: admin.ddc.vagrant
+            serveraliases:
+                - www.admin.ddc.vagrant
+            docroot: /var/www/admin.ddc.vagrant/trunk
+            port: '80'
+            setenv:
+                - 'APP_ENV dev'
+            override:
+                - All
+            options:
+                - Indexes
+                - FollowSymLinks
+                - MultiViews
+            custom_fragment: ''
+            ssl_cert: ''
+            ssl_key: ''
+            ssl_chain: ''
+            ssl_certs_dir: ''
+    mod_pagespeed: 0
+    mod_spdy: 0
 php:
     install: '1'
     version: '55'

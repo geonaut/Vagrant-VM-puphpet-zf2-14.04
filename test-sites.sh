@@ -9,5 +9,5 @@ echo 'Setting Up Foundation / Grunt Test Site'
 rm -fr foundation-test.local
 foundation new foundation-test.local --libsass
 cd foundation-test.local
-npm install
+npm install grunt-sass grunt-contrib-watch
 grunt build

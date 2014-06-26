@@ -40,7 +40,10 @@ Vagrant.configure("2") do |config|
   if data['vm']['chosen_provider'].empty? || data['vm']['chosen_provider'] == "virtualbox"
     ENV['VAGRANT_DEFAULT_PROVIDER'] = 'virtualbox'
 
+    
+
     config.vm.provider :virtualbox do |virtualbox|
+      virtualbox.gui = true
       data['vm']['provider']['virtualbox']['modifyvm'].each do |key, value|
         if key == "memory"
           next
