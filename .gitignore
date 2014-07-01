@@ -4,5 +4,7 @@ zend-app.local/
 DDC_sites.sh
 online.ddc.vagrant/
 admin.ddc.vagrant/
-
+*.sql
 puphpet/shell/self-promotion.txt
+
+local_data.sh

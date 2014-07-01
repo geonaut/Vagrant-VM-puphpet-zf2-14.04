@@ -43,7 +43,8 @@ Vagrant.configure("2") do |config|
     
 
     config.vm.provider :virtualbox do |virtualbox|
-      virtualbox.gui = true
+      # Uncheck for GUI
+      # virtualbox.gui = true
       data['vm']['provider']['virtualbox']['modifyvm'].each do |key, value|
         if key == "memory"
           next
@@ -131,8 +132,9 @@ Vagrant.configure("2") do |config|
     end
   end
 
-  config.vm.provision :shell, :path => "install-rvm.sh",  :args => "stable"
-  config.vm.provision :shell, :path => "install-ruby.sh", :args => "2.1.2"
+  config.vm.provision :shell, :path => "geonaut/install-rvm.sh",  :args => "stable"
+  config.vm.provision :shell, :path => "geonaut/install-ruby.sh", :args => "2.1.2"
+  config.vm.provision :shell, :path => "geonaut/Main_setup.sh"
   config.vm.provision :shell, :path => "puphpet/shell/execute-files.sh"
   config.vm.provision :shell, :path => "puphpet/shell/important-notices.sh"
 

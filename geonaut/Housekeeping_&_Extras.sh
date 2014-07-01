@@ -1,12 +1,12 @@
 #!/bin/bash
 # Update & Upgrade
 echo 'updating OS'
-sudo apt-get update --yes
+sudo apt-get update -y
 echo 'upgrading OS'
-sudo apt-get upgrade
+sudo apt-get upgrade -y
 #Install Guest Additions
 echo 'installing guest additions'
-sudo apt-get install --yes virtualbox-guest-dkms virtualbox-guest-utils virtualbox-guest-iso
+sudo apt-get install -y virtualbox-guest-dkms virtualbox-guest-utils virtualbox-guest-iso
 
 #INSTALLING GUI
 
