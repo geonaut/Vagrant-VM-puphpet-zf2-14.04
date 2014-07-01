@@ -46,9 +46,9 @@ sh setup-sites.sh
 
 ## Bash Scripts
 
-* geonaut/install-rvm.sh - enabled by default
-* geonaut/install-ruby.sh - enabled by default
-* geonaut/Main_setup.sh - enabled by default
+* geonaut/install-rvm.sh - enabled by default in Vagrantfile
+* geonaut/install-ruby.sh - enabled by default in Vagrantfile
+* geonaut/Main_setup.sh - enabled by default in Vagrantfile
 * geonaut/install-phpbrew.sh - run manually
 * geonaut/Housekeeping_&_Extras.sh - run manually
 * geonaut/test-sites.sh - run manually
