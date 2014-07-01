@@ -48,8 +48,8 @@ sh setup-sites.sh
 
 * geonaut/install-rvm.sh - enabled by default
 * geonaut/install-ruby.sh - enabled by default
-* geonaut/install-phpbrew.sh - enabled by default
 * geonaut/Main_setup.sh - enabled by default
+* geonaut/install-phpbrew.sh - run manually
 * geonaut/Housekeeping_&_Extras.sh - run manually
 * geonaut/test-sites.sh - run manually
 
