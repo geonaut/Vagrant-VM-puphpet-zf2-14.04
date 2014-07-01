@@ -53,9 +53,9 @@ sh setup-sites.sh
 * geonaut/Housekeeping_&_Extras.sh - run manually
 * geonaut/test-sites.sh - run manually
 
-This should deliver a fresh copy of the Zend Skeleton App and a fresh copy of a Foundation 5 template
-
 ## Accessing / editing the test sites
+
+This VM should deliver a fresh copy of the Zend Skeleton App and a fresh copy of a Foundation 5 template
 
 * Edit your local hosts file (not on the VM), adding:
 ```
