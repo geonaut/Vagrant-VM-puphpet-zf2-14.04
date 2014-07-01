@@ -4,6 +4,9 @@ echo 'updating OS'
 sudo apt-get update -y
 echo 'upgrading OS'
 sudo apt-get upgrade -y
+echo 'updating Gems'
+sudo gem update
+
 #Install Guest Additions
 echo 'installing guest additions'
 sudo apt-get install -y virtualbox-guest-dkms virtualbox-guest-utils virtualbox-guest-iso

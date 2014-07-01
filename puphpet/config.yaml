@@ -80,11 +80,11 @@ apache:
         - php
         - rewrite
     vhosts:
-        VlPHB6jj0zyc:
+        zend-app.local:
             servername: zend-app.local
             serveraliases:
                 - www.zend-app.local
-            docroot: /var/www/zend-app.local/skeleton-application/public
+            docroot: /var/www/Test-Sites/zend-app.local/skeleton-application/public
             port: '80'
             setenv:
                 - 'APP_ENV dev'
@@ -99,11 +99,11 @@ apache:
             ssl_key: ''
             ssl_chain: ''
             ssl_certs_dir: ''
-        Zcm0vVwuOjjE:
+        foundation-test.local:
             servername: foundation-test.local
             serveraliases:
                 - www.foundation-test.local
-            docroot: /var/www/foundation-test.local
+            docroot: /var/www/Test-Sites/foundation-test.local
             port: '80'
             setenv:
                 - 'APP_ENV dev'
@@ -118,11 +118,11 @@ apache:
             ssl_key: ''
             ssl_chain: ''
             ssl_certs_dir: ''
-        Zcm0aseuOjjE:
+        online.ddc.vagrant:
             servername: online.ddc.vagrant
             serveraliases:
                 - www.online.ddc.vagrant
-            docroot: /var/www/online.ddc.vagrant/trunk
+            docroot: /var/www/online.ddc.vagrant
             port: '80'
             setenv:
                 - 'APP_ENV dev'
@@ -137,11 +137,11 @@ apache:
             ssl_key: ''
             ssl_chain: ''
             ssl_certs_dir: ''
-        Zcm03sfuOjjE:
+        admin.ddc.vagrant:
             servername: admin.ddc.vagrant
             serveraliases:
                 - www.admin.ddc.vagrant
-            docroot: /var/www/admin.ddc.vagrant/trunk
+            docroot: /var/www/admin.ddc.vagrant
             port: '80'
             setenv:
                 - 'APP_ENV dev'
