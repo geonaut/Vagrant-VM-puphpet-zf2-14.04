@@ -14,6 +14,7 @@ It is not intended for use in a Production envrionment
 
 * Basebox and LAMP configuration from http://puphpet.com
 * RVM / Vagrant integration following: https://rvm.io/integration/vagrant
+* PHPBrew for PHP version management: https://github.com/phpbrew/phpbrew
 
 ## Default programs included
 
@@ -43,9 +44,14 @@ cd /vagrant
 sh setup-sites.sh
 ```
 
-## Housekeeping
+## Bash Scripts
 
-* type ``` gem update ```
+* geonaut/install-rvm.sh - enabled by default
+* geonaut/install-ruby.sh - enabled by default
+* geonaut/install-phpbrew.sh - enabled by default
+* geonaut/Main_setup.sh - enabled by default
+* geonaut/Housekeeping_&_Extras.sh - run manually
+* geonaut/test-sites.sh - run manually
 
 This should deliver a fresh copy of the Zend Skeleton App and a fresh copy of a Foundation 5 template
 
