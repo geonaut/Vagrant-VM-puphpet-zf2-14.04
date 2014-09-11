@@ -1,13 +1,12 @@
----
 vagrantfile-local:
     vm:
         box: puphpet/ubuntu1404-x64
         box_url: puphpet/ubuntu1404-x64
         hostname: null
-        memory: '512'
+        memory: '2048'
         chosen_provider: virtualbox
         network:
-            private_network: 192.168.56.101
+            private_network: 192.168.56.102
             forwarded_port:
                 mXz548oEcXq0:
                     host: '8896'
@@ -80,6 +79,25 @@ apache:
         - php
         - rewrite
     vhosts:
+        localhost.vagrant:
+            servername: localhost.vagrant
+            serveraliases:
+                - www.localhost.vagrant
+            docroot: /var/www/
+            port: '80'
+            setenv:
+                - 'APP_ENV dev'
+            override:
+                - All
+            options:
+                - Indexes
+                - FollowSymLinks
+                - MultiViews
+            custom_fragment: ''
+            ssl_cert: ''
+            ssl_key: ''
+            ssl_chain: ''
+            ssl_certs_dir: ''
         zend-app.local:
             servername: zend-app.local
             serveraliases:

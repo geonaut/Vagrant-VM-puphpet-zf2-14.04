@@ -6,7 +6,7 @@ online.ddc.vagrant/
 admin.ddc.vagrant/
 *.sql
 puphpet/shell/self-promotion.txt
-
+docs/
 local_data.sh
-
+sandbox/
 Test_Sites/composer.phar
