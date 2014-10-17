@@ -93,3 +93,4 @@ This VM should deliver a fresh copy of the Zend Skeleton App and a fresh copy of
 
 * This Repo was committed from a Mac and runs on Ubuntu, so UNIX line endings are used. If pulling to a Windows machine, you will need to ensure Unix line endings are preserved. You can achieve this by setting ```git config --global core.autocrlf = false``` to make sure your system pulls and pushes code without changing line endings.
 * If you wish to create symlinks within your shared folder, you will need to uncomment the line ```virtualbox.customize ["setextradata", :id, "VBoxInternal2/SharedFoldersEnableSymlinksCreate/v-root", "1"] ``` You will also need to launch vagrant from a Administrator-level cmd window.
+* Install SSH client and configure it to be available from the command line. You may need to add the ssh client location to the system path. This can be found in Enviroment Variables.
