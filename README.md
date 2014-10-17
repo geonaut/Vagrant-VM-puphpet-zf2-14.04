@@ -85,7 +85,7 @@ This VM should deliver a fresh copy of the Zend Skeleton App and a fresh copy of
 
 ### VBox Guest Additions
 
-* To keep on top of the guest additions, there is the VBGuest plugin. To use it, simply type vagrant ``` plugin install vagrant-vbguest ``` and the plugin should take care of the rest. You might need to update the version of the gust additions ISO in your vbox instance.
+* To keep on top of the guest additions, there is the VBGuest plugin. To use it, simply type ``` vagrant plugin install vagrant-vbguest ``` (on the host, not the guest) and the plugin should take care of the rest. You might need to update the version of the gust additions ISO in your vbox instance.
 
 ## Notes
 
