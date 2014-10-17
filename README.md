@@ -38,11 +38,6 @@ It is not intended for use in a Production envrionment
 * Navigate in to the folder, using terminal
 * Type: ``` vagrant up ```
 * Once the VM is built type: ``` vagrant ssh ```
-* Once logged in to the fresh VM, type:
-```
-cd /vagrant
-sh setup-sites.sh
-```
 
 ## Bash Scripts
 
