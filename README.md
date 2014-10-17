@@ -9,6 +9,7 @@ It is not intended for use in a Production envrionment
 
 * Vagrant
 * VBox
+* SSH Client
 
 ## Resources used
 
