@@ -92,4 +92,8 @@ This VM should deliver a fresh copy of the Zend Skeleton App and a fresh copy of
 * When you destroy the vm (vagrant destroy), the zend-app.local and foundation-test.local folders will persist. To get a fresh copy of these, uncomment the 'rm' lines in setup-sites.sh
 
 * On login as the vagrant user, you can update installed gems by running 'gem update'
-* 
+
+## Using this VM on Windows
+
+* This Repo was committed from a Mac and runs on Ubuntu, so UNIX line endings are used. If pulling to a Windows machine, you will need to ensure Unix line endings are preserved. You can achieve this by setting ```git config --global core.autocrlf = false``` to make sure your system pulls and pushes code without changing line endings.
+* If you wish to create symlinks within your shared folder, you will need to uncomment the line ```virtualbox.customize ["setextradata", :id, "VBoxInternal2/SharedFoldersEnableSymlinksCreate/v-root", "1"] ``` You will also need to launch vagrant from a Administrator-level cmd window.
