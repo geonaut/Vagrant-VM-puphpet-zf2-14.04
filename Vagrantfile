@@ -62,6 +62,8 @@ Vagrant.configure("2") do |config|
       if data['vm']['hostname'].to_s.strip.length != 0
         virtualbox.customize ["modifyvm", :id, "--name", config.vm.hostname]
       end
+      # Uncomment this line to enable symlinks in Windows. Will also require Admin-level VM.
+      # virtualbox.customize ["setextradata", :id, "VBoxInternal2/SharedFoldersEnableSymlinksCreate/v-root", "1"]
     end
   end
 
