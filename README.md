@@ -37,6 +37,8 @@ It is not intended for use in a Production envrionment
 
 * Clone to your local system
 * Navigate in to the folder, using terminal
+* Make sure the base box is up to date - ```vagrant box update```
+* Set up guest additions - ``` vagrant plugin install vagrant-vbguest ```
 * Type: ``` vagrant up ```
 * Once the VM is built type: ``` vagrant ssh ```
 
@@ -78,10 +80,6 @@ This VM should deliver a fresh copy of the Zend Skeleton App and a fresh copy of
 * Once setup, restart the vm with ``` exit ``` then ``` vagrant halt ``` and ``` vagrant up ```. You should see the vbox GUI, followed by a standard desktop login prompt. Login as the user vagrant (default is no password).
 * Type ``` sudo startxfce4& ```
 * X should start up, and log you into your shiny new desktop
-
-### VBox Guest Additions
-
-* To keep on top of the guest additions, there is the VBGuest plugin. To use it, simply type ``` vagrant plugin install vagrant-vbguest ``` (on the host, not the guest) and the plugin should take care of the rest. You might need to update the version of the gust additions ISO in your vbox instance.
 
 ## Notes
 
